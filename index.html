@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Progressive Auto Quote for Ronald Wood | Bill Layne Insurance</title>
+    
+    <!-- SEO & Social Sharing Meta Tags -->
+    <meta name="description" content="Ronald Wood, view your personalized Progressive auto insurance quote from Bill Layne Insurance. See your affordable monthly payment options and comprehensive coverage details.">
+    <meta name="robots" content="noindex, nofollow"> <!-- Prevent indexing of this private quote -->
+    <meta property="og:title" content="Your Personalized Auto Quote from Bill Layne Insurance">
+    <meta property="og:description" content="We've secured a fantastic rate with Progressive for you. Click to see your detailed coverage and savings.">
+    <meta property="og:image" content="https://i.imgur.com/cBAgeX8.png"> <!-- Agency Logo -->
+    <meta property="og:url" content="#"> <!-- Placeholder for actual quote URL -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            /* Branding & Colors */
+            --brand-primary: #1e40af; /* Deep Blue */
+            --brand-accent: #f97316;  /* Bright Orange */
+            --brand-light: #eff6ff;   /* Light Blue bg */
+            --text-dark: #1e293b;
+            --text-light: #f8fafc;
+            --text-muted: #64748b;
+            --surface-white: #ffffff;
+            --border-color: #e2e8f0;
+            --success-color: #22c55e;
+            
+            /* Typography */
+            --font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --fs-base: 16px;
+            --fs-sm: 0.875rem; /* 14px */
+            --fs-md: 1rem;     /* 16px */
+            --fs-lg: 1.125rem; /* 18px */
+            --fs-xl: 1.25rem;  /* 20px */
+            --fs-2xl: 1.5rem;   /* 24px */
+            --fs-3xl: 2rem;     /* 32px */
+            --fs-4xl: 2.5rem;   /* 40px */
+            --fs-5xl: 3.5rem;   /* 56px */
+
+            /* Spacing & Layout */
+            --container-padding: 1.5rem;
+            --section-padding: 4rem 0;
+            
+            /* Effects */
+            --shadow-sm: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        /* --- Base & Reset --- */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; font-size: var(--fs-base); }
+        body { font-family: var(--font-family); color: var(--text-dark); background-color: #f8fafc; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 var(--container-padding); }
+        img { max-width: 100%; height: auto; display: block; }
+        section { padding: var(--section-padding); overflow: hidden; }
+
+        h1, h2, h3, h4, h5, h6 { line-height: 1.2; font-weight: 700; color: var(--brand-primary); }
+        h1 { font-size: var(--fs-4xl); }
+        h2 { font-size: var(--fs-3xl); margin-bottom: 2rem; text-align: center;}
+        h3 { font-size: var(--fs-2xl); }
+        h4 { font-size: var(--fs-xl); }
+
+        .section-subtitle { display: block; text-align: center; color: var(--brand-accent); font-weight: 600; margin-bottom: 0.5rem; }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+        .btn-primary { background-color: var(--brand-accent); color: var(--text-light); }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); background-color: #fb923c; }
+        .btn-secondary { background-color: transparent; color: var(--text-light); border: 2px solid var(--text-light);}
+        .btn-secondary:hover { background-color: var(--text-light); color: var(--brand-primary); }
+        .btn-icon { display: flex; align-items: center; gap: 0.5rem; }
+
+        /* --- Scroll Animations --- */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- 1. Hero Section --- */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem var(--container-padding);
+            background-image: 
+                linear-gradient(rgba(30, 64, 175, 0.85), rgba(30, 64, 175, 0.95)),
+                url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        .hero * { color: var(--text-light) !important; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+
+        .hero-header { display: flex; justify-content: space-between; align-items: center; position: absolute; top: 2rem; left: 0; right: 0; padding: 0 var(--container-padding); }
+        .agency-logo img { height: 40px; }
+        .carrier-logo img { height: 50px; }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            max-width: 800px;
+        }
+
+        .hero-greeting { font-size: var(--fs-2xl); font-weight: 500; }
+        .hero-title { font-size: var(--fs-5xl); font-weight: 800; line-height: 1.1; margin-bottom: 1rem; }
+        .hero-premium-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 1rem 0;
+        }
+        .hero-premium { font-size: calc(var(--fs-5xl) + 2rem); font-weight: 800; line-height: 1; }
+        .hero-premium .per-month { font-size: var(--fs-2xl); font-weight: 500; margin-left: 0.5rem; }
+        .hero-subtext { font-size: var(--fs-lg); opacity: 0.9; margin-top: 0.5rem;}
+        
+        .savings-badge { background: var(--brand-accent); padding: 0.75rem 1.5rem; border-radius: 50px; font-weight: 600; font-size: var(--fs-lg); margin-top: 1rem; }
+        .hero-cta-group { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 1.5rem; }
+
+        .trust-badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem; font-weight: 500;}
+        .trust-badge { display: flex; align-items: center; gap: 0.5rem; }
+        
+        .scroll-down { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); font-size: 2rem; animation: bounce 2s infinite;}
+        @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-20px); } 60% { transform: translateY(-10px); } }
+
+        /* --- Sticky Nav --- */
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            background-color: var(--surface-white);
+            padding: 1rem;
+            box-shadow: var(--shadow-md);
+            z-index: 999;
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .sticky-nav.visible { display: flex; }
+        .sticky-nav .quote-info { font-weight: 600; font-size: var(--fs-lg); }
+        .sticky-nav .quote-info .price { color: var(--brand-accent); }
+        .sticky-nav .btn { padding: 0.75rem 1.5rem; }
+
+        /* --- 2. Quote Breakdown Section --- */
+        .coverage-grid {
+            display: grid;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .vehicle-section {
+            background-color: var(--surface-white);
+            border-radius: 16px;
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .vehicle-section:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+        
+        .vehicle-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            background: linear-gradient(to right, var(--brand-primary), #3b82f6);
+            color: var(--text-light);
+        }
+        .vehicle-header i { font-size: var(--fs-3xl); margin-right: 1rem; }
+        .vehicle-title { font-size: var(--fs-2xl); color: var(--text-light); }
+        .vehicle-vin { font-size: var(--fs-sm); opacity: 0.8; letter-spacing: 1px;}
+        .vehicle-premium-total { font-size: var(--fs-2xl); font-weight: 700; text-align: right; color: var(--text-light); }
+        
+        .coverage-details { padding: 1.5rem; }
+        .coverage-table { width: 100%; border-collapse: collapse; }
+        .coverage-table th, .coverage-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .coverage-table th { font-weight: 600; color: var(--text-muted); font-size: var(--fs-sm); text-transform: uppercase; letter-spacing: 0.5px;}
+        .coverage-table td { color: var(--text-dark); }
+        .coverage-name { font-weight: 600; }
+        .coverage-limit { font-size: var(--fs-sm); }
+        .coverage-premium { font-weight: 600; text-align: right; }
+
+        .general-coverage-card {
+             background: var(--brand-light);
+             padding: 2rem;
+             border-radius: 16px;
+             border-left: 5px solid var(--brand-accent);
+        }
+        .general-coverage-card h3 { color: var(--brand-primary); }
+
+        /* --- 3. Visual Quote Summary --- */
+        .visual-summary { background-color: var(--brand-light); }
+        .summary-grid {
+            display: grid;
+            gap: 2rem;
+            align-items: center;
+        }
+        .summary-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+        }
+        .summary-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-bottom: 1.5rem;}
+        .summary-title { font-size: var(--fs-lg); font-weight: 600; }
+        .summary-date { font-size: var(--fs-sm); color: var(--text-muted); }
+        
+        .premium-options { display: flex; justify-content: space-around; text-align: center; margin-bottom: 2rem;}
+        .premium-option h4 { font-size: var(--fs-md); color: var(--text-muted); font-weight: 500; }
+        .premium-option .price { font-size: var(--fs-2xl); font-weight: 700; color: var(--brand-primary); }
+        .premium-option .savings { color: var(--success-color); font-weight: 600; font-size: var(--fs-sm);}
+
+        .discounts-list { list-style: none; columns: 2; -webkit-columns: 2; -moz-columns: 2; gap: 1rem;}
+        .discounts-list li { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; font-weight: 500;}
+        .discounts-list .fa-check-circle { color: var(--success-color); }
+
+        .summary-footer { text-align: center; margin-top: 2rem; }
+        .summary-actions { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+        
+        /* --- Flexible Payment Options --- */
+        #payment-options { background: #fff; }
+        .payment-tabs { display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem; }
+        .tab-btn { background: var(--brand-light); color: var(--brand-primary); padding: 0.75rem 1.5rem; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; }
+        .tab-btn.active { background: var(--brand-primary); color: #fff; }
+
+        .payment-plans-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .plan-content { display: none; }
+        .plan-content.active { display: contents; }
+        
+        .payment-plan-card {
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .payment-plan-card h4 { color: var(--brand-accent); }
+        .payment-plan-card .down-payment { font-size: var(--fs-3xl); font-weight: 700; margin: 0.5rem 0;}
+        .payment-plan-card .monthly-payment { color: var(--text-muted); }
+        .payment-plan-card.recommended {
+            border-color: var(--brand-accent);
+            border-width: 2px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+        }
+        .recommended-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--brand-accent); color: #fff; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 20px;}
+
+        /* --- Agency Advantage Section --- */
+        .agency-advantage { background: var(--brand-light); }
+        .agency-content { display: grid; align-items: center; gap: 3rem; }
+        .agency-image-container img { border-radius: 16px; box-shadow: var(--shadow-lg); }
+        
+        /* --- FAQ Section --- */
+        .faq-item details {
+            background-color: var(--surface-white);
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+        }
+        .faq-item summary {
+            padding: 1.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: var(--fs-lg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-item summary::after { content: '\f078'; font-family: 'Font Awesome 6 Free'; font-weight: 900; transition: transform 0.3s ease; }
+        .faq-item details[open] summary::after { transform: rotate(180deg); }
+        .faq-item .faq-content { padding: 0 1.5rem 1.5rem; }
+
+        /* --- Final CTA Section --- */
+        .final-cta {
+            background: linear-gradient(to right, var(--brand-primary), #3b82f6);
+            color: var(--text-light);
+            text-align: center;
+            border-radius: 20px;
+            padding: 4rem 2rem;
+            margin: var(--section-padding);
+        }
+        .final-cta h2, .final-cta p { color: var(--text-light); }
+        .final-cta .contact-methods { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 2rem; margin-top: 2rem;}
+
+        /* --- Media Queries --- */
+        @media (min-width: 768px) {
+            h1 { font-size: var(--fs-5xl); }
+            .summary-grid { grid-template-columns: 1fr 1fr; }
+            .agency-content { grid-template-columns: 1fr 1fr; }
+            .faq-container { max-width: 800px; margin: 0 auto; }
+        }
+        
+        /* Print Styles */
+        @media print {
+            body { background: #fff; color: #000; }
+            .hero, .sticky-nav, .btn, .faq-item summary::after, .final-cta, #payment-options, #summary, .agency-advantage { display: none; }
+            section { padding: 2rem 0; }
+            h1, h2, h3 { color: #000; }
+            .vehicle-header { background: #eee; color: #000 !important;}
+            .vehicle-header * {color: #000 !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Schema.org Markup for Insurance Quote -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "InsuranceQuote",
+      "broker": {
+        "@type": "InsuranceAgency",
+        "name": "Bill Layne Insurance Agency"
+      },
+      "provider": {
+        "@type": "InsuranceCompany",
+        "name": "Progressive"
+      },
+      "quoteFor": {
+        "@type": "Person",
+        "name": "Ronald Wood"
+      },
+      "totalPrice": {
+        "@type": "PriceSpecification",
+        "price": "653.02",
+        "priceCurrency": "USD",
+        "description": "6 Month Policy Premium if paid monthly."
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "592.02",
+          "priceCurrency": "USD",
+          "description": "Discounted price if paid in full for 6 months."
+        }
+      },
+      "insuranceType": "AutoInsurance",
+      "policyTerm": "P6M"
+    }
+    </script>
+
+    <!-- 1. HERO SECTION -->
+    <header class="hero" id="hero">
+        <div class="hero-header">
+            <div class="agency-logo"><img src="https://i.imgur.com/cBAgeX8.png" alt="Bill Layne Insurance Agency Logo"></div>
+            <div class="carrier-logo"><img src="https://i.imgur.com/K6kTnTa.png" alt="Progressive Logo"></div>
+        </div>
+        <div class="hero-content animate-on-scroll">
+            <h2 class="hero-greeting">Ronald Wood, here is your personalized auto quote!</h2>
+            <div class="hero-premium-box">
+                <p class="hero-subtext">With Automatic Payments (EFT)</p>
+                <div class="hero-premium">$105<span class="per-month">/mo</span></div>
+                <p class="hero-subtext">After just $104.19 down to start</p>
+            </div>
+            <div class="savings-badge">
+                <i class="fas fa-star"></i> Over 6 Discounts Applied!
+            </div>
+            <p class="hero-title">Comprehensive Coverage for Your Family & Vehicles.</p>
+            <div class="hero-cta-group">
+                <a href="tel:336-835-1993" class="btn btn-primary btn-icon"><i class="fas fa-phone"></i> Lock In This Rate Now</a>
+                <a href="#payment-options" class="btn btn-secondary">Explore All Payment Plans</a>
+            </div>
+            <div class="trust-badges">
+                <span class="trust-badge"><i class="fas fa-user-shield"></i> Your Local NC Agent</span>
+                <span class="trust-badge"><i class="fas fa-award"></i> A+ Rated Carrier</span>
+                <span class="trust-badge"><i class="fas fa-check-circle"></i> Rates Verified June 9, 2025</span>
+            </div>
+        </div>
+        <a href="#breakdown" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+    </header>
+    
+    <!-- STICKY HEADER -->
+    <nav class="sticky-nav" id="sticky-nav">
+        <div class="container">
+            <div class="quote-info">
+                <strong>Ronald Wood's Quote:</strong> Starting at <span class="price">$105/mo</span>
+            </div>
+            <a href="tel:336-835-1993" class="btn btn-primary">Activate Policy</a>
+        </div>
+    </nav>
+    
+    <main>
+
+        <!-- 2. QUOTE BREAKDOWN SECTION -->
+        <section id="breakdown">
+            <div class="container">
+                <span class="section-subtitle animate-on-scroll">Detailed Coverage</span>
+                <h2 class="animate-on-scroll">Your 6-Month Policy at a Glance</h2>
+
+                <div class="coverage-grid">
+                    <!-- General Policy Coverage -->
+                    <div class="general-coverage-card animate-on-scroll">
+                        <h3>General Policy Coverages (Applies to All Vehicles)</h3>
+                        <table class="coverage-table">
+                            <thead>
+                                <tr><th>Coverage</th><th>Limits</th><th style="text-align: right;">6-Mo Premium</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><div class="coverage-name">Combined Uninsured/Underinsured Motorist</div></td>
+                                    <td><div class="coverage-limit">$50,000 person / $100,000 accident</div></td>
+                                    <td class="coverage-premium">$42.00</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="coverage-name">Uninsured Motorist Property Damage</div><div class="coverage-limit">$100 Deductible</div></td>
+                                    <td><div class="coverage-limit">$50,000 accident</div></td>
+                                    <td class="coverage-premium">$2.00</td>
+                                </tr>
+                                 <tr style="font-weight: bold; background-color: #f0f9ff;">
+                                    <td colspan="2">General Coverage Total</td>
+                                    <td class="coverage-premium">$44.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Vehicle 1: 2009 Toyota Corolla -->
+                    <div class="vehicle-section animate-on-scroll">
+                        <div class="vehicle-header">
+                            <div><h3 class="vehicle-title"><i class="fas fa-car-side"></i> 2009 Toyota Corolla</h3></div>
+                            <div class="vehicle-premium-total">$182.88 <span style="font-size: 1rem; font-weight: 500;">/ term</span></div>
+                        </div>
+                        <div class="coverage-details">
+                            <table class="coverage-table">
+                                 <tbody>
+                                    <tr><td>Liability Coverage</td><td>$50k / $100k BI | $50k PD</td><td class="coverage-premium">$141.88</td></tr>
+                                    <tr><td>Medical Payments</td><td>$1,000 per person</td><td class="coverage-premium">$4.00</td></tr>
+                                    <tr><td>Other Than Collision</td><td>$100 Deductible</td><td class="coverage-premium">$37.00</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle 2: 2016 TOYOTA PRIUS -->
+                    <div class="vehicle-section animate-on-scroll">
+                        <div class="vehicle-header">
+                            <div><h3 class="vehicle-title"><i class="fas fa-leaf"></i> 2016 Toyota Prius</h3></div>
+                            <div class="vehicle-premium-total">$179.51 <span style="font-size: 1rem; font-weight: 500;">/ term</span></div>
+                        </div>
+                        <div class="coverage-details">
+                             <table class="coverage-table">
+                                <tbody>
+                                    <tr><td>Liability Coverage</td><td>$50k / $100k BI | $50k PD</td><td class="coverage-premium">$131.51</td></tr>
+                                    <tr><td>Medical Payments</td><td>$1,000 per person</td><td class="coverage-premium">$4.00</td></tr>
+                                    <tr><td>Other Than Collision</td><td>$100 Deductible</td><td class="coverage-premium">$44.00</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle 3: 2017 TOYOTA TUNDRA -->
+                    <div class="vehicle-section animate-on-scroll">
+                        <div class="vehicle-header">
+                            <div><h3 class="vehicle-title"><i class="fas fa-truck"></i> 2017 Toyota Tundra</h3></div>
+                            <div class="vehicle-premium-total">$170.63 <span style="font-size: 1rem; font-weight: 500;">/ term</span></div>
+                        </div>
+                        <div class="coverage-details">
+                            <table class="coverage-table">
+                               <tbody>
+                                    <tr><td>Liability Coverage</td><td>$50k / $100k BI | $50k PD</td><td class="coverage-premium">$120.63</td></tr>
+                                    <tr><td>Medical Payments</td><td>$1,000 per person</td><td class="coverage-premium">$4.00</td></tr>
+                                    <tr><td>Other Than Collision</td><td>$100 Deductible</td><td class="coverage-premium">$46.00</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. VISUAL QUOTE SUMMARY SECTION -->
+        <section class="visual-summary" id="summary">
+            <div class="container">
+                <span class="section-subtitle animate-on-scroll">Your Quote Snapshot</span>
+                <h2 class="animate-on-scroll">Protection & Savings You Can See</h2>
+                 <div class="summary-grid">
+                    <div class="summary-card animate-on-scroll" style="transition-delay: 100ms;">
+                        <h4>6-Month Premium Breakdown</h4>
+                        <canvas id="premiumChart" style="margin: 0 auto 1.5rem; max-height: 250px;"></canvas>
+                        <div class="summary-actions">
+                             <a href="#" class="btn btn-primary btn-icon"><i class="fas fa-file-pdf"></i> Save as PDF</a>
+                             <a href="#" class="btn btn-secondary" style="color:var(--brand-primary); border-color:var(--brand-primary);"><i class="fas fa-envelope"></i> Email Quote</a>
+                        </div>
+                    </div>
+                     <div class="summary-card animate-on-scroll" style="transition-delay: 200ms;">
+                        <div class="summary-header">
+                            <h3 class="summary-title">Your Payment Choices</h3>
+                        </div>
+                        <div class="premium-options">
+                            <div class="premium-option">
+                                <h4>Monthly Plan</h4>
+                                <p class="price">$108.86<span style="font-size:1.25rem;">/total</span></p>
+                                <p class="subtext">Full Term: $653.02</p>
+                            </div>
+                            <div class="premium-option">
+                                <h4>Pay in Full</h4>
+                                <p class="price">$592.02</p>
+                                <p class="savings">You Save $61.00!</p>
+                            </div>
+                        </div>
+                        <h4 style="margin-bottom: 1rem; text-align:center;">Your Applied Discounts</h4>
+                        <ul class="discounts-list">
+                            <li><i class="fas fa-check-circle"></i> Multi-Car</li>
+                            <li><i class="fas fa-check-circle"></i> Continuous Insurance</li>
+                            <li><i class="fas fa-check-circle"></i> Mobile Home Owner</li>
+                            <li><i class="fas fa-check-circle"></i> Platinum Loyalty</li>
+                            <li><i class="fas fa-check-circle"></i> Paperless Option</li>
+                            <li><i class="fas fa-check-circle"></i> Pay in Full Option</li>
+                            <li><i class="fas fa-check-circle"></i> Airbags (All Vehicles)</li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- FLEXIBLE PAYMENT OPTIONS -->
+        <section id="payment-options">
+             <div class="container">
+                <span class="section-subtitle animate-on-scroll">Multiple Ways to Pay</span>
+                <h2 class="animate-on-scroll">Find the Perfect Plan for Your Budget</h2>
+                <p class="animate-on-scroll" style="text-align: center; max-width: 700px; margin: -1.5rem auto 3rem auto; color: var(--text-muted);">You have multiple options for your down payment. Lower monthly payments often mean a higher initial payment. Choose what works best for you!</p>
+                <div class="payment-tabs animate-on-scroll">
+                    <button class="tab-btn active" onclick="showPlans('eft')"><i class="fas fa-piggy-bank"></i> AutoPay from Bank (EFT) - <span style="font-weight:normal; opacity:0.8;">Lower Fee</span></button>
+                    <button class="tab-btn" onclick="showPlans('card')"><i class="far fa-credit-card"></i> Card or By Mail - <span style="font-weight:normal; opacity:0.8;">Standard Fee</span></button>
+                </div>
+                
+                <div id="eft-plans" class="plan-content active">
+                    <div class="payment-plans-container">
+                         <div class="payment-plan-card recommended animate-on-scroll"><span class="recommended-badge">Best Value</span><h4>Lowest Monthly</h4><div class="down-payment">$187.51</div><p class="monthly-payment">then 4 payments of $110.39</p></div>
+                         <div class="payment-plan-card animate-on-scroll"><h4 style="opacity: 0;">&nbsp;</h4><div class="down-payment">$156.26</div><p class="monthly-payment">then 5 payments of $94.76</p></div>
+                         <div class="payment-plan-card animate-on-scroll"><h4 style="opacity: 0;">&nbsp;</h4><div class="down-payment">$125.01</div><p class="monthly-payment">then 5 payments of $101.01</p></div>
+                         <div class="payment-plan-card animate-on-scroll"><h4>Lowest Down</h4><div class="down-payment">$104.19</div><p class="monthly-payment">then 5 payments of $105.17</p></div>
+                    </div>
+                </div>
+
+                <div id="card-plans" class="plan-content">
+                    <div class="payment-plans-container">
+                        <div class="payment-plan-card animate-on-scroll"><h4>Lowest Monthly</h4><div class="down-payment">$195.91</div><p class="monthly-payment">then 4 payments of $117.29</p></div>
+                        <div class="payment-plan-card animate-on-scroll"><h4 style="opacity: 0;">&nbsp;</h4><div class="down-payment">$163.26</div><p class="monthly-payment">then 5 payments of $100.96</p></div>
+                        <div class="payment-plan-card animate-on-scroll"><h4 style="opacity: 0;">&nbsp;</h4><div class="down-payment">$130.61</div><p class="monthly-payment">then 5 payments of $107.49</p></div>
+                        <div class="payment-plan-card animate-on-scroll"><h4>Lowest Down</h4><div class="down-payment">$108.86</div><p class="monthly-payment">then 5 payments of $111.84</p></div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <!-- AGENCY ADVANTAGE SECTION -->
+        <section class="agency-advantage">
+            <div class="container">
+                <span class="section-subtitle animate-on-scroll">The Local Difference</span>
+                <h2 class="animate-on-scroll">Why Choose Bill Layne Insurance Agency?</h2>
+                <div class="agency-content">
+                    <div class="agency-image-container animate-on-scroll">
+                        <img src="https://i.imgur.com/cBAgeX8.png" alt="Bill Layne and the team">
+                    </div>
+                    <div class="animate-on-scroll" style="transition-delay: 100ms;">
+                        <h3>Your Neighbors, Not a National Call Center.</h3>
+                        <p>When you call us, you're not talking to a stranger in a different time zone. You're talking to a dedicated agent right here in Elkin who knows you, your family, and the unique needs of our North Carolina community.</p>
+                        <ul style="list-style: none; padding-left: 0; margin-top:1rem;">
+                           <li style="display:flex; align-items:center; gap:1rem; margin-bottom:0.5rem;"><i class="fa-solid fa-circle-check" style="color:var(--brand-accent);"></i> We shop multiple carriers like Progressive to find you the best value.</li>
+                           <li style="display:flex; align-items:center; gap:1rem; margin-bottom:0.5rem;"><i class="fa-solid fa-circle-check" style="color:var(--brand-accent);"></i> We're here to provide personal advice and help you with claims.</li>
+                           <li style="display:flex; align-items:center; gap:1rem; margin-bottom:0.5rem;"><i class="fa-solid fa-circle-check" style="color:var(--brand-accent);"></i> Supporting a local business means supporting our local community.</li>
+                        </ul>
+                         <a href="tel:336-835-1993" class="btn btn-primary" style="margin-top:1.5rem;">Talk to Your Local Agent</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+             <div class="container">
+                <span class="section-subtitle animate-on-scroll">Got Questions?</span>
+                <h2 class="animate-on-scroll">We've Got Answers.</h2>
+                 <div class="faq-container">
+                    <div class="faq-item animate-on-scroll">
+                         <details>
+                            <summary>What are my liability limits and are they enough?</summary>
+                            <div class="faq-content">
+                                <p>Your quote includes liability limits of <strong>$50,000</strong> for bodily injury per person, <strong>$100,000</strong> for bodily injury per accident, and <strong>$50,000</strong> for property damage. This provides significantly more protection than the NC state minimums of $30k/$60k/$25k. It's a solid level of coverage for protecting your assets in case of an at-fault accident.</p>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <details>
+                            <summary>What is "Other Than Collision" and do I need it?</summary>
+                            <div class="faq-content">
+                                <p>This coverage, also known as Comprehensive, is very valuable. It pays for damage to your car from events *other than* an accident, like theft, vandalism, fire, hail, or hitting an animal. Since you have it on all three vehicles, you're protected from a wide range of unexpected incidents. You chose a low $100 deductible, which is excellent!</p>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <details>
+                            <summary>Why is the EFT payment plan cheaper?</summary>
+                            <div class="faq-content">
+                                <p>Progressive offers a discount for using Automatic Payments from a bank account (EFT) because it's a more secure and reliable payment method for them. This results in a lower installment fee per payment ($1.00 for EFT vs. $3.00 for Card/Mail), which we pass on as savings directly to you over the course of the policy.</p>
+                            </div>
+                        </details>
+                    </div>
+                 </div>
+             </div>
+        </section>
+        
+        <!-- FINAL CTA Section -->
+        <section class="final-cta" id="next-steps">
+            <div class="container animate-on-scroll">
+                <h2 style="font-size:var(--fs-4xl)">Ready to Secure This Excellent Rate?</h2>
+                <p>Lock in your savings and get the peace of mind you deserve. Activating your policy takes just a few minutes.</p>
+                <div class="contact-methods">
+                     <a href="tel:336-835-1993" class="btn btn-primary" style="padding: 1.5rem 3rem; font-size: 1.25rem;">Call Now to Activate: 336-835-1993</a>
+                </div>
+                 <div style="margin-top:2rem;">
+                     <p>Any final questions? We're here to help.</p>
+                     <a href="mailto:Save@BillLayneInsurance.com" style="color:var(--text-light); font-size: 1.25rem;">Save@BillLayneInsurance.com</a>
+                 </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+    // --- Scroll Animations ---
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+            }
+        });
+    }, { threshold: 0.1 });
+    animatedElements.forEach(el => observer.observe(el));
+    
+    // --- Sticky Nav ---
+    const heroSection = document.getElementById('hero');
+    const stickyNav = document.getElementById('sticky-nav');
+    const stickyNavObserver = new IntersectionObserver( ([entry]) => {
+      stickyNav.classList.toggle('visible', !entry.isIntersecting);
+    }, {rootMargin: "-200px 0px 0px 0px"});
+    stickyNavObserver.observe(heroSection);
+    
+    // --- Payment Plan Tabs ---
+    function showPlans(planType) {
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('.plan-content').forEach(content => content.classList.remove('active'));
+        document.querySelector(`.tab-btn[onclick="showPlans('${planType}')"]`).classList.add('active');
+        document.getElementById(`${planType}-plans`).classList.add('active');
+    }
+
+    // --- Premium Breakdown Chart ---
+    const ctx = document.getElementById('premiumChart').getContext('2d');
+    const premiumChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ['2009 Corolla', '2016 Prius', '2017 Tundra', 'General Coverages'],
+            datasets: [{
+                label: '6-Month Premium',
+                data: [182.88, 179.51, 170.63, 44.00],
+                backgroundColor: [
+                    'rgba(30, 64, 175, 0.9)', 
+                    'rgba(59, 130, 246, 0.9)', 
+                    'rgba(147, 197, 253, 0.9)',
+                    'rgba(249, 115, 22, 0.9)'
+                ],
+                borderColor: 'rgba(255, 255, 255, 1)',
+                borderWidth: 3
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { position: 'bottom', labels: { font: { size: 12 }}},
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            let label = context.label || '';
+                            if (label) { label += ': '; }
+                            if (context.parsed !== null) {
+                                label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed);
+                            }
+                            return label;
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    </script>
+
+</body>
+</html>
