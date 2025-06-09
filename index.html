@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Progressive Auto Quote - Ronald Wood | Bill Layne Insurance</title>
+    
+    <meta name="description" content="Your personalized Progressive auto insurance quote, presented by Bill Layne Insurance. See your affordable monthly payment options for your vehicles in Thurmond, NC.">
+    <meta name="author" content="Bill Layne Insurance Agency">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.billlayneinsurance.com/">
+    <meta property="og:title" content="Your Progressive Auto Quote - Ronald Wood | Bill Layne Insurance">
+    <meta property="og:description" content="Your personalized Progressive auto insurance quote is ready! See your coverage and affordable payment options.">
+    <meta property="og:image" content="https://i.imgur.com/cBAgeX8.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.billlayneinsurance.com/">
+    <meta property="twitter:title" content="Your Progressive Auto Quote - Ronald Wood | Bill Layne Insurance">
+    <meta property="twitter:description" content="Your personalized Progressive auto insurance quote is ready! See your coverage and affordable payment options.">
+    <meta property="twitter:image" content="https://i.imgur.com/cBAgeX8.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script> <!-- Placeholder for Font Awesome Kit -->
+
+<style>
+    :root {
+        --primary-color: #004B8D; /* Progressive Blue */
+        --accent-color: #f97316; /* Bill Layne Orange Accent */
+        --secondary-color: #4B5563;
+        --bg-light: #f8fafc;
+        --bg-white: #ffffff;
+        --text-dark: #111827;
+        --text-light: #f9fafb;
+        --text-secondary: #6B7280;
+        --border-color: #e5e7eb;
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Reset and Base Styles */
+    *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg-light);
+        color: var(--text-dark);
+        line-height: 1.6;
+        font-size: 16px;
+    }
+
+    /* Container */
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    /* Section Padding */
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    @media (min-width: 768px) {
+        .section-padding {
+            padding: 100px 0;
+        }
+    }
+    
+    /* Typography */
+    h1, h2, h3, h4 {
+        line-height: 1.2;
+        font-weight: 700;
+        color: var(--primary-color);
+    }
+
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; margin-bottom: 24px; }
+    h3 { font-size: 1.5rem; margin-bottom: 16px; }
+    h4 { font-size: 1.25rem; }
+    
+    p { margin-bottom: 1rem; color: var(--text-secondary); }
+
+    .text-center { text-align: center; }
+
+    /* Button System */
+    .btn {
+        display: inline-block;
+        padding: 14px 28px;
+        border-radius: 50px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+        cursor: pointer;
+    }
+
+    .btn--primary {
+        background-color: var(--accent-color);
+        color: var(--text-light);
+    }
+
+    .btn--primary:hover {
+        background-color: #dd6613;
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .btn--secondary {
+        background-color: transparent;
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+    }
+    .btn--secondary:hover {
+        background-color: var(--accent-color);
+        color: var(--text-light);
+    }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        color: var(--text-light) !important;
+        background-image: 
+            linear-gradient(rgba(0, 75, 141, 0.85), rgba(0, 52, 99, 0.95)),
+            url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center;
+        padding: 60px 0 80px 0;
+        overflow: hidden;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+    }
+    
+    /* UPDATED: Stretches logo on mobile, caps width on larger screens */
+    .carrier-logo-centered {
+        display: block;
+        width: 100%; /* Default to full width of parent on mobile */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto 30px auto; /* Center block and add space below */
+    }
+
+    /* On screens 500px and wider, constrain the logo's width */
+    @media (min-width: 500px) {
+        .carrier-logo-centered {
+            max-width: 300px;
+        }
+    }
+    
+    .hero h1, .hero p {
+        color: var(--text-light) !important;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        font-weight: 800;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 16px;
+    }
+     @media (min-width: 768px) { .hero h1 { font-size: 3rem; } }
+
+
+    .hero-quote-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        padding: 30px;
+        max-width: 550px;
+        margin: 40px auto;
+        box-shadow: 0 8px 32px 0 rgba(0,0,0,0.3);
+    }
+
+    .hero-premium {
+        font-size: 4rem;
+        font-weight: 800;
+        line-height: 1;
+        color: var(--text-light);
+    }
+    .premium-freq { font-size: 1.5rem; font-weight: 400; margin-left: 5px;}
+    .premium-label { font-size: 1rem; font-weight: 500; display: block; opacity: 0.9; }
+    .total-premium { display: block; font-size: 1rem; opacity: 0.8; margin-top: 10px; }
+    .savings-badge {
+       background: var(--accent-color);
+       color: var(--text-light);
+       padding: 8px 16px;
+       border-radius: 50px;
+       font-weight: 600;
+       font-size: 0.9rem;
+       display: inline-block;
+       margin-top: 20px;
+   }
+
+    .hero .hero-ctas { margin-top: 30px; display: flex; flex-direction: column; gap: 1rem; align-items: center; }
+     @media (min-width: 768px) { .hero-ctas { flex-direction: row; justify-content: center; } }
+     
+    .trust-badges {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .trust-badge {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 8px 15px;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    /* Section Header */
+    .section-header {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto 40px auto;
+    }
+    .section-header .sub-heading {
+        color: var(--accent-color);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    /* Quote Breakdown Section */
+    .coverage-grid {
+        display: grid;
+        gap: 30px;
+    }
+    @media(min-width: 768px){ .coverage-grid { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }}
+
+    .vehicle-card {
+        background: var(--bg-white);
+        border-radius: 12px;
+        box-shadow: var(--shadow-md);
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .vehicle-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-lg);
+    }
+    .vehicle-header {
+        background: var(--primary-color);
+        color: var(--text-light);
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .vehicle-header h3 { color: var(--text-light); font-size: 1.25rem; margin:0;}
+    .vehicle-premium { font-size: 1.5rem; font-weight: 700;}
+    
+    .coverage-list { padding: 20px; }
+    .coverage-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+    .coverage-item:last-child { border: none; }
+    .coverage-item span:first-child { font-weight: 500; }
+    .coverage-item .limit { color: var(--text-secondary); }
+    .coverage-item .premium { font-weight: 600; }
+
+    /* Visual Summary */
+    .visual-summary-card {
+        background: linear-gradient(135deg, var(--primary-color), #0064C7);
+        color: var(--text-light);
+        border-radius: 16px;
+        padding: 40px;
+        box-shadow: var(--shadow-lg);
+        display: grid;
+        gap: 40px;
+    }
+    @media (min-width: 992px) { .visual-summary-card { grid-template-columns: 1fr 1fr; } }
+    
+    .visual-summary-card h3 { color: var(--text-light); }
+    .summary-section ul { list-style-type: none; }
+    .summary-section li { margin-bottom: 12px; display:flex; align-items: center; gap: 10px;}
+    .summary-section i { color: #34d399; }
+    
+    /* Education Hub */
+    .education-card {
+        background: var(--bg-white);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 20px;
+    }
+    .education-card h4 { display: flex; align-items: center; gap: 10px; color: var(--primary-color); }
+    .education-card i { color: var(--accent-color); }
+    .nc-minimum { background-color: #fffbeb; border-left: 4px solid #f59e0b; padding: 15px; border-radius: 8px; margin-top: 15px; }
+
+    /* Points Calculator */
+    .calculator-container {
+        display: grid;
+        gap: 30px;
+        background-color: var(--bg-white);
+        padding: 30px;
+        border-radius: 16px;
+        box-shadow: var(--shadow-md);
+    }
+     @media (min-width: 768px) { .calculator-container { grid-template-columns: 1fr 1fr; } }
+
+    .calculator-input label { display: block; font-weight: 600; margin-bottom: 10px; }
+    .calculator-input select {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+        font-size: 1rem;
+    }
+    .calculator-result {
+        background-color: #e0f2fe;
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+    }
+    #points-result {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--primary-color);
+    }
+
+    /* Bill Layne Advantage Section */
+    #agency-advantage { background: var(--bg-white); }
+    .advantage-grid {
+        display: grid;
+        gap: 40px;
+        align-items: center;
+    }
+     @media (min-width: 992px) { .advantage-grid { grid-template-columns: 1fr 1fr; } }
+    .advantage-image {
+        border-radius: 16px;
+        width: 100%;
+        height: auto;
+        box-shadow: var(--shadow-lg);
+    }
+
+    /* Payment Options Section */
+    .payment-grid {
+        display: grid;
+        gap: 20px;
+    }
+    @media(min-width: 768px){ .payment-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); } }
+    
+    .payment-card {
+        border: 2px solid var(--border-color);
+        border-radius: 12px;
+        padding: 24px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .payment-card.featured {
+        border-color: var(--accent-color);
+        transform: scale(1.05);
+        box-shadow: var(--shadow-lg);
+        position: relative;
+    }
+    .popular-badge {
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--accent-color);
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .payment-amount { font-size: 2.5rem; font-weight: 700; color: var(--primary-color); }
+    .payment-freq { font-size: 1.25rem; font-weight: 400; color: var(--text-secondary); }
+    .payment-desc { font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px; }
+
+
+    /* FAQ Section */
+    .faq-item {
+        background: var(--bg-white);
+        margin-bottom: 10px;
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+    }
+    .faq-item summary {
+        padding: 20px;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .faq-item summary::after { content: '+'; font-size: 1.5rem; transition: transform 0.2s; }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item div { padding: 0 20px 20px; }
+
+    /* Final CTA */
+    #final-cta {
+        background: var(--primary-color);
+        color: var(--text-light);
+    }
+    #final-cta h2, #final-cta p {
+        color: var(--text-light);
+    }
+    .cta-actions { margin-top: 30px; display: flex; flex-direction: column; gap: 1rem; align-items: center; }
+     @media (min-width: 768px) { .cta-actions { flex-direction: row; justify-content: center; } }
+
+
+    /* Footer */
+    .footer {
+        background: #111827;
+        color: #9ca3af;
+        padding: 40px 0;
+        font-size: 0.9rem;
+    }
+    .footer .container { text-align: center; }
+    .footer a { color: var(--text-light); text-decoration: none;}
+    .footer a:hover { text-decoration: underline; }
+    .footer-logos {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .footer-logos img { max-height: 50px; }
+
+    /* Scroll Animation */
+    .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+</style>
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<header class="hero">
+    <div class="hero-content container">
+        
+        <img src="https://i.imgur.com/K6kTnTa.png" alt="Progressive Logo" class="carrier-logo-centered">
+        
+        <h1>Ronald Wood, here is your personalized auto insurance quote.</h1>
+        <p>We've secured a fantastic rate with Progressive by applying multiple discounts. Review your affordable options below.</p>
+        
+        <div class="hero-quote-card reveal">
+            <span class="premium-label">Most Popular Monthly Option Starts At</span>
+            <div class="hero-premium">
+                $101<span class="premium-freq">.01/mo</span>
+            </div>
+            <p class="total-premium">after an initial payment of $125.01 on EFT AutoPay.<br> 
+            Your 6-Month policy starts June 9, 2025.</p>
+            <div class="savings-badge">
+                Paid-in-Full, Multi-Car & Other Discounts Applied!
+            </div>
+        </div>
+        
+        <div class="hero-ctas">
+            <a href="tel:336-835-1993" class="btn btn--primary">Call to Activate: 336-835-1993</a>
+            <a href="#payment-options" class="btn btn--secondary">See All Payment Plans</a>
+        </div>
+        
+        <div class="trust-badges">
+            <span class="trust-badge">Licensed NC Agent</span>
+            <span class="trust-badge">A+ Rated Carrier</span>
+            <span class="trust-badge">Local Elkin Service</span>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- QUOTE BREAKDOWN SECTION -->
+    <section id="quote-breakdown" class="section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="sub-heading">Your Coverage Details</span>
+                <h2>Protection For Each of Your Vehicles</h2>
+                <p>Here is a detailed breakdown of the coverages and costs associated with each vehicle on your policy. General policy coverages apply to any vehicle being driven.</p>
+            </div>
+
+            <div class="coverage-grid">
+                <!-- Vehicle 1 Card -->
+                <div class="vehicle-card reveal">
+                    <div class="vehicle-header">
+                        <h3>2009 Toyota Corolla</h3>
+                        <span class="vehicle-premium">$182.88</span>
+                    </div>
+                    <div class="coverage-list">
+                        <div class="coverage-item">
+                            <span>Liability Coverage</span>
+                            <span class="limit">$50k/$100k/$50k</span>
+                            <span class="premium">$141.88</span>
+                        </div>
+                        <div class="coverage-item">
+                            <span>Medical Payments</span>
+                            <span class="limit">$1,000 / person</span>
+                            <span class="premium">$4.00</span>
+                        </div>
+                        <div class="coverage-item">
+                            <span>Other Than Collision</span>
+                            <span class="limit">$100 Deductible</span>
+                            <span class="premium">$37.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vehicle 2 Card -->
+                <div class="vehicle-card reveal">
+                    <div class="vehicle-header">
+                        <h3>2016 Toyota Prius</h3>
+                        <span class="vehicle-premium">$179.51</span>
+                    </div>
+                    <div class="coverage-list">
+                         <div class="coverage-item">
+                            <span>Liability Coverage</span>
+                            <span class="limit">$50k/$100k/$50k</span>
+                            <span class="premium">$131.51</span>
+                        </div>
+                        <div class="coverage-item">
+                            <span>Medical Payments</span>
+                            <span class="limit">$1,000 / person</span>
+                            <span class="premium">$4.00</span>
+                        </div>
+                        <div class="coverage-item">
+                            <span>Other Than Collision</span>
+                            <span class="limit">$100 Deductible</span>
+                            <span class="premium">$44.00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vehicle 3 Card -->
+                <div class="vehicle-card reveal">
+                    <div class="vehicle-header">
+                        <h3>2017 Toyota Tundra</h3>
+                        <span class="vehicle-premium">$170.63</span>
+                    </div>
+                    <div class="coverage-list">
+                         <div class="coverage-item">
+                            <span>Liability Coverage</span>
+                            <span class="limit">$50k/$100k/$50k</span>
+                            <span class="premium">$120.63</span>
+                        </div>
+                        <div class="coverage-item">
+                            <span>Medical Payments</span>
+                            <span class="limit">$1,000 / person</span>
+                            <span class="premium">$4.00</span>
+                        </div>
+                        <div class="coverage-item">
+                            <span>Other Than Collision</span>
+                            <span class="limit">$100 Deductible</span>
+                            <span class="premium">$46.00</span>
+                        </div>
+                    </div>
+                </div>
+                 
+                 <!-- General Policy Card -->
+                <div class="vehicle-card reveal">
+                    <div class="vehicle-header">
+                        <h3>General Policy Coverage</h3>
+                        <span class="vehicle-premium">$44.00</span>
+                    </div>
+                    <div class="coverage-list">
+                        <div class="coverage-item">
+                            <span>Uninsured Motorist</span>
+                            <span class="limit">$50k/$100k</span>
+                            <span class="premium">$42.00</span>
+                        </div>
+                        <div class="coverage-item">
+                            <span>UM Property Damage</span>
+                            <span class="limit">$50k / $100 Ded</span>
+                            <span class="premium">$2.00</span>
+                        </div>
+                         <div class="coverage-item">
+                            <span>Applies to...</span>
+                            <span class="limit">All vehicles</span>
+                            <span class="premium"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISUAL SUMMARY SECTION -->
+    <section id="visual-summary" class="section-padding" style="background-color: var(--bg-light);">
+        <div class="container reveal">
+             <div class="visual-summary-card">
+                 <div class="summary-section">
+                    <h3>Your 6-Month Quote Summary</h3>
+                    <p>This policy protects you from June 9, 2025 until December 9, 2025.</p>
+                    <ul>
+                        <li><i class="fas fa-car"></i><strong>3 Vehicles Covered:</strong> Corolla, Prius, and Tundra</li>
+                        <li><i class="fas fa-user-friends"></i><strong>2 Drivers Covered:</strong> Ronald & Belinda Wood</li>
+                        <li><i class="fas fa-shield-alt"></i><strong>Total 6-Month Premium:</strong> $653.02</li>
+                        <li><i class="fas fa-tags"></i><strong>Paid-in-Full Discount:</strong> -$61.00</li>
+                        <li><i class="fas fa-wallet"></i><strong>Pay Today and Save:</strong> $592.02</li>
+                    </ul>
+                 </div>
+                 <div class="summary-section">
+                     <h3>Valuable Discounts Included</h3>
+                     <p>We've automatically applied every discount you qualify for.</p>
+                     <ul>
+                         <li><i class="fas fa-check-circle"></i> Paid in Full Option</li>
+                         <li><i class="fas fa-check-circle"></i> Continuous Insurance (Platinum)</li>
+                         <li><i class="fas fa-check-circle"></i> Paperless Billing</li>
+                         <li><i class="fas fa-check-circle"></i> Multi-Car Discount</li>
+                         <li><i class="fas fa-check-circle"></i> Mobile Home Owner Credit</li>
+                         <li><i class="fas fa-check-circle"></i> Airbag Safety Feature</li>
+                     </ul>
+                 </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- EDUCATION HUB SECTION -->
+    <section id="education" class="section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="sub-heading">Knowledge is Power</span>
+                <h2>What Your Coverage Means For You</h2>
+                <p>Understanding your auto insurance is key. Here’s a simple guide to what each part of your policy does to protect you on the road.</p>
+            </div>
+            <div class="reveal">
+                <div class="education-card">
+                    <h4><i class="fas fa-users"></i> Bodily Injury & Property Damage Liability</h4>
+                    <p>This is the core of your policy. If you're at fault in an accident, it pays for the other party's medical bills (Bodily Injury) and vehicle or property repairs (Property Damage).</p>
+                    <div class="nc-minimum"><strong>Your limits ($50k/$100k/$50k) are significantly higher than the NC state minimums</strong> ($30k/$60k/$25k), providing you with better financial protection.</div>
+                </div>
+                <div class="education-card">
+                    <h4><i class="fas fa-car-crash"></i> Uninsured/Underinsured Motorist</h4>
+                    <p>Protects you if you're hit by a driver who has no insurance (Uninsured) or not enough insurance (Underinsured) to cover your medical expenses. This is crucial coverage.</p>
+                </div>
+                <div class="education-card">
+                    <h4><i class="fas fa-plus-square"></i> Medical Payments</h4>
+                    <p>Covers medical and funeral expenses for you or your passengers after an accident, regardless of who is at fault. It provides quick access to funds for initial treatment.</p>
+                </div>
+                <div class="education-card">
+                    <h4><i class="fas fa-tree"></i> Other Than Collision (Comprehensive)</h4>
+                    <p>Pays for damage to your car from non-collision events like theft, vandalism, fire, hail, or hitting an animal. You selected a $100 deductible, which means you pay the first $100 of the repair cost.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NC POINTS CALCULATOR SECTION -->
+    <section id="points-calculator" class="section-padding" style="background: var(--bg-white);">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="sub-heading">Interactive Tool</span>
+                <h2>NC Insurance Points & Your Rate</h2>
+                <p>Curious how traffic violations can impact insurance rates in North Carolina? Use our calculator to see the potential percentage increase based on the state's Safe Driver Incentive Plan (SDIP).</p>
+            </div>
+            <div class="calculator-container reveal">
+                <div class="calculator-input">
+                     <label for="violation-select">Select a Violation or Enter Points:</label>
+                    <select id="violation-select" onchange="calculatePoints()">
+                        <option value="0">No points (Clean Record)</option>
+                        <option value="1">At-fault accident (property damage < $2,300)</option>
+                        <option value="2">Speeding > 10 mph over in a < 55 mph zone</option>
+                        <option value="4">Reckless driving</option>
+                        <option value="4">Passing a stopped school bus</option>
+                        <option value="8">Aggressive driving</option>
+                        <option value="12">DWI (Driving While Impaired)</option>
+                    </select>
+                     <p style="font-size: 0.9rem; margin-top: 15px;">Your policy currently has <strong>0 SDIP points</strong>, which helps keep your rate low!</p>
+                </div>
+                <div class="calculator-result">
+                    <span class="premium-label">Potential Rate Increase</span>
+                    <div id="points-result">0%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BILL LAYNE ADVANTAGE SECTION -->
+    <section id="agency-advantage" class="section-padding">
+        <div class="container">
+            <div class="advantage-grid reveal">
+                <div class="advantage-text">
+                     <div class="section-header" style="text-align:left; margin: 0 0 20px 0;">
+                        <span class="sub-heading">The Bill Layne Advantage</span>
+                        <h2>Your Neighbors, Not a Call Center</h2>
+                        <p>When you choose Bill Layne Insurance, you get more than a policy—you get a dedicated local partner. We live and work in the same community you do. We're here to provide personalized advice, answer your questions, and be your advocate, especially if you ever have a claim.</p>
+                     </div>
+                    <ul>
+                        <li><strong>Personalized Service:</strong> We know you by name, not a policy number.</li>
+                        <li><strong>Local Claims Help:</strong> If something happens, you call us, not an 800 number halfway across the country.</li>
+                        <li><strong>Community Focused:</strong> Proudly serving Elkin and the surrounding Yadkin Valley.</li>
+                    </ul>
+                    <a href="tel:336-835-1993" class="btn btn--primary" style="margin-top: 20px;">Talk to Your Local Agent</a>
+                </div>
+                <img src="https://i.imgur.com/cBAgeX8.png" alt="The Bill Layne Insurance Agency Team" class="advantage-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- PAYMENT OPTIONS SECTION -->
+    <section id="payment-options" class="section-padding" style="background-color: var(--bg-white);">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="sub-heading">Flexible & Easy</span>
+                <h2>Choose the Payment Plan That Works For You</h2>
+                <p>We offer several convenient ways to pay for your policy. Our most popular option is automatic monthly EFT, which includes the lowest installment fees.</p>
+            </div>
+            <div class="payment-grid">
+                <div class="payment-card featured reveal">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Monthly EFT</h3>
+                    <div class="payment-amount">$101.01<span class="payment-freq">/mo</span></div>
+                    <p class="payment-desc">After a $125.01 initial payment. 5 subsequent monthly payments. Includes a low $1.00 fee.</p>
+                    <a href="tel:336-835-1993" class="btn btn--primary" style="margin-top: 15px;">Choose This Plan</a>
+                </div>
+                <div class="payment-card reveal">
+                     <h3>Pay in Full</h3>
+                    <div class="payment-amount">$592.02</div>
+                     <p class="payment-desc">Pay once and you're done! Saves you $61.00 compared to the full premium. No installment fees.</p>
+                     <a href="tel:336-835-1993" class="btn btn--secondary" style="margin-top: 15px;">Choose This Plan</a>
+                </div>
+                <div class="payment-card reveal">
+                    <h3>Monthly by Card</h3>
+                    <div class="payment-amount">$103.01<span class="payment-freq">/mo</span></div>
+                    <p class="payment-desc">After a $125.01 initial payment. 5 subsequent payments. Includes a $3.00 installment fee.</p>
+                    <a href="tel:336-835-1993" class="btn btn--secondary" style="margin-top: 15px;">Choose This Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="section-padding">
+        <div class="container">
+             <div class="section-header reveal">
+                <span class="sub-heading">Quick Answers</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-list reveal">
+                <details class="faq-item">
+                    <summary>What discounts am I getting?</summary>
+                    <div><p>You are receiving a comprehensive set of discounts including Paid-in-Full (if you choose that option), Continuous Insurance, Paperless, Multi-Car, and a Mobile Home Owner credit. We automatically apply every discount you're eligible for to get you the best possible rate.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>How do I file a claim?</summary>
+                    <div><p>It's easy! You have two great options. You can call Progressive's 24/7 claims hotline directly, or you can call our local office at 336-835-1993. We recommend calling us first so we can guide you through the process and ensure everything goes smoothly. We're your advocate!</p></div>
+                </details>
+                 <details class="faq-item">
+                    <summary>Can I make changes to my policy later?</summary>
+                    <div><p>Absolutely. Your needs can change, and your policy can change with them. Just give our office a call. We can easily help you adjust coverage limits, add or remove vehicles, or update driver information.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Is this my final rate?</summary>
+                    <div><p>This quote is based on the information provided and verified reports. As long as all information is accurate (drivers, vehicles, driving history), this is the rate you will pay. It's valid as of June 9, 2025.</p></div>
+                </details>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FINAL CTA SECTION -->
+    <section id="final-cta" class="section-padding text-center">
+        <div class="container reveal">
+            <h2>Ready to Lock In This Great Rate?</h2>
+            <p>Securing your coverage is just one call away. Let's get you protected with Progressive today.</p>
+            <div class="cta-actions">
+                <a href="tel:336-835-1993" class="btn btn--primary" style="font-size: 1.25rem; padding: 18px 36px;">Activate Your Policy Now: 336-835-1993</a>
+                <a href="mailto:Save@BillLayneInsurance.com" class="btn btn--secondary">Email Us With Questions</a>
+            </div>
+            <p style="margin-top: 20px; font-size: 0.9rem;">Our office hours are Monday - Friday, 8:30 AM - 5:00 PM.</p>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logos">
+            <img src="https://i.imgur.com/cBAgeX8.png" alt="Bill Layne Insurance Agency">
+             <img src="https://i.imgur.com/K6kTnTa.png" alt="Progressive">
+        </div>
+        <p><strong>Bill Layne Insurance Agency</strong></p>
+        <p>
+            <a href="https://maps.google.com/?q=1283 N Bridge St, Elkin NC 28621" target="_blank">1283 N Bridge St, Elkin NC 28621</a> | 
+            <a href="tel:336-835-1993">336-835-1993</a> |
+            <a href="mailto:Save@BillLayneInsurance.com">Save@BillLayneInsurance.com</a>
+        </p>
+        <p style="margin-top: 20px;">&copy; 2025 Bill Layne Insurance Agency. This is a personalized insurance quote, not a binder of coverage. Coverage begins once payment is received and the policy is issued.</p>
+    </div>
+</footer>
+
+<script>
+// NC Points Calculator Logic
+function calculatePoints() {
+    const pointsMap = {
+        "0": 0, "1": 30, "2": 45, "3": 60, "4": 80,
+        "5": 110, "6": 135, "7": 165, "8": 195,
+        "9": 225, "10": 260, "11": 295, "12": 340
+    };
+    
+    const selectedValue = document.getElementById('violation-select').value;
+    const rateIncrease = pointsMap[selectedValue];
+    
+    document.getElementById('points-result').innerText = `${rateIncrease}%`;
+}
+
+
+// Intersection Observer for animations
+document.addEventListener('DOMContentLoaded', () => {
+    const reveals = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    reveals.forEach(reveal => {
+        observer.observe(reveal);
+    });
+    
+    // Add fontawesome icons dynamically to avoid blocking render
+    const icons = {
+        "fa-car": "\uf1b9", "fa-user-friends": "\uf500", "fa-shield-alt": "\uf3ed", "fa-tags": "\uf02c", "fa-wallet": "\uf555",
+        "fa-check-circle": "\uf058", "fa-users": "\uf0c0", "fa-car-crash": "\uf5e1", "fa-plus-square": "\uf0fe", "fa-tree": "\uf1bb"
+    };
+    
+    for (const [className, content] of Object.entries(icons)) {
+        const elements = document.querySelectorAll(`.fas.${className}`);
+        elements.forEach(el => {
+            el.style.fontFamily = "'Font Awesome 5 Free'";
+            el.style.fontWeight = "900";
+            el.style.fontStyle = "normal";
+            el.style.display = "inline-block";
+            el.style.textRendering = "auto";
+            el.style.webkitFontSmoothing = "antialiased";
+            el.innerHTML = content;
+        });
+    }
+
+});
+
+</script>
+
+</body>
+</html>
